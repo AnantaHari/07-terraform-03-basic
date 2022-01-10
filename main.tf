@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "bucket" {
 }
 
 resource "aws_dynamodb_table" "terraform_state_locking_dynamodb" {
-  name = "terraform-state-locking"
+  name = "kvetalex-terraform-state-locking"
   hash_key = "LockID"
   read_capacity = 20
   write_capacity = 20
